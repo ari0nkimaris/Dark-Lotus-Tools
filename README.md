@@ -22,4 +22,4 @@
   🪟 Windows CMD batch scripting
   🎨 ANSI escape codes for colors
   🔗 curl for HTTP requests
-  🔄 Proxy rotation
+  🔄 Proxy rotation.
