@@ -120,10 +120,10 @@
 
 ```batch
 1. Download the repository
-   git clone https://github.com/ari0nkimaris/Dark-Lotus-Tools.git
+git clone https://github.com/ari0nkimaris/Dark-Lotus-Tools.git
 
 2. Navigate to the folder
-   cd Dark-Lotus-Tools
+cd Dark-Lotus-Tools
 
 3. Run the script
-   DarkLotusTools.bat
+DarkLotusTools.bat
