@@ -1,0 +1,33 @@
+
+name: Repository Validation
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate repository files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required files
+        run: |
+          test -s README.md
+          test -s LICENSE
+          test -s "Dark Lotus Tools.zip"
+
+      - name: Validate ZIP archive
+        run: unzip -t "Dark Lotus Tools.zip"
+
+      - name: Confirm validation
+        run: echo "Repository validation passed."
